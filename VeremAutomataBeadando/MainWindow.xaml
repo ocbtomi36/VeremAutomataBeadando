@@ -1,0 +1,17 @@
+﻿<Window x:Class="VeremAutomataBeadando.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VeremAutomataBeadando"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width= "1000">
+    <Grid>
+        <DataGrid x:Name="matrixGrid" AutoGenerateColumns="True" HeadersVisibility="None" Margin="536,65,55,100"/>
+        <Label Content="Beolvasott szabályok" HorizontalAlignment="Left" Height="29" Margin="775,14,0,0" VerticalAlignment="Top" Width="181" BorderBrush="White" BorderThickness="1px"/>
+        <TextBox x:Name="inputString" Margin="20,9,751,368" BorderBrush="Black" BorderThickness="1px">Írd ide az elemezni kívánt stringet!</TextBox>
+        <Button Margin="22,96,747,262" Click="Elemez">Elküld</Button>
+        <TextBox x:Name="kiir" Margin="14,355,666,22" BorderBrush="Black" BorderThickness="1px"></TextBox>
+    </Grid>
+
+</Window>
